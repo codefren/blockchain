@@ -1,5 +1,5 @@
 const sha256 = require('sha256');
-const currentNodeUrl = process.argv[3];
+const currentNodeUrl = process.env.HOST_BLOCKCHAIN || "0.0.0.0:3000";
 const uuid = require('uuid/v1');
 
 function Blockchain() {
